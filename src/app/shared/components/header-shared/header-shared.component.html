@@ -12,8 +12,8 @@
         </div>
 
         <ul class="menu menu-horizontal">
-            @for (item of menuHeader(); track $index) {
-                <li class="p-2 hover:text-blue-700 font-bold "><a>{{item | uppercase  }} </a></li>
+            @for (item of menuHeaderEs(); track $index) {
+                <li class="p-2 hover:text-blue-700 font-bold "><a [href]="'#'+item">{{item | uppercase  }} </a></li>
             }
 
         </ul>

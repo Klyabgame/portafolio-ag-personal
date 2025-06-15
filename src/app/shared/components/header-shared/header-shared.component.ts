@@ -11,11 +11,18 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HeaderSharedComponent {
 
-  menuHeader=signal<string[]>([
+  menuHeaderEn=signal<string[]>([
     'home',
     'about',
     'proyect',
     'contact'
+  ])
+
+  menuHeaderEs=signal<string[]>([
+    'inicio',
+    'sobre mi',
+    'proyectos',
+    'contactame'
   ])
 
 }
