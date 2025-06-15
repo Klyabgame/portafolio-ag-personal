@@ -1,0 +1,37 @@
+<div class="flex flex-col p-8 h-screen justify-center items-center  bg-gray-100">
+    <div class="flex flex-col justify-center items-center gap-4 mt-20">
+        <h1 class="text-4xl font-bold">SOBRE MI</h1>
+        <div class="divider h-2 w-18 border-4 border-gray-800 bg-transparent mx-auto"></div>
+
+
+        <p class="text-2xl text-gray-400">Hola, Aqui encontraras mas sobre mi, las tecnologias que manejo en mi dia a dia como
+            programador</p>
+    </div>
+    <div class="flex flex-row justify-center items-center gap-4   h-full ">
+        <div class="w-[40%] flex flex-col gap-2  p-4  ">
+            <h2 class="text-2xl font-bold">Conoceme un poco mejor!</h2>
+            <p class="w-[80%]   text-base/8 text-gray-400">Soy un Desarrollador Web enfocado en Frontend, especializado en la construcción y gestión de la interfaz
+                de sitios web y aplicaciones web, asegurando que contribuyan al éxito del producto final. Mis
+                herramientas principales en el día a día incluyen Angular y Node.js, lo que me permite trabajar
+                eficientemente en el desarrollo de interfaces dinámicas y la gestión del backend cuando es necesario.
+
+                Además, disfruto compartir contenido sobre todo lo que he aprendido en el mundo del desarrollo web,
+                aportando valor a la comunidad de desarrolladores. Puedes encontrar mis publicaciones en LinkedIn e
+                Instagram, donde comparto consejos, tutoriales y experiencias en Web Development y Programación.
+
+                Estoy abierto a oportunidades laborales donde pueda aportar, aprender y seguir creciendo
+                profesionalmente. Si tienes una oferta que se alinee con mis habilidades y experiencia, no dudes en
+                contactarme.</p>
+            <button class="btn btn-secondary w-[20%] p-6">CONTACTAME</button>
+        </div>
+        <div class="w-[40%] flex flex-col gap-2   p-4 ">
+            <h2 class="text-2xl font-bold">HABILIDADES</h2>
+            <div class="flex flex-wrap gap-4 ">
+                @for (item of skill; track $index) {
+                <h3 class="p-4 card  bg-gray-200 shadow-lg cursor-pointer">{{item}}</h3>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

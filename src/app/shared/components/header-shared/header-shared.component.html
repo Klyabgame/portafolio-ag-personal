@@ -1,0 +1,21 @@
+<div>
+    <section class="flex justify-between p-4 items-center mx-">
+        <div class="flex items-center gap-4 cursor-pointer hover:text-blue-700">
+
+            <div class="avatar">
+                <div class="ring-primary ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
+                    <img src="/assets/img/perfil.jpeg" />
+                </div>
+            </div>
+            <p class="text-xl font-bold ">FRANZ GAVINO CARRERA</p>
+
+        </div>
+
+        <ul class="menu menu-horizontal">
+            @for (item of menuHeader(); track $index) {
+                <li class="p-2 hover:text-blue-700 font-bold "><a>{{item | uppercase  }} </a></li>
+            }
+
+        </ul>
+    </section>
+</div>
