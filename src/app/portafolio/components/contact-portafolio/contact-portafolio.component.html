@@ -1,19 +1,37 @@
-<div  class="flex flex-col p-8 h-screen justify-center items-center  bg-gray-100">
+<div class="flex flex-col p-8 h-screen justify-center items-center  bg-gray-100">
     <div class="flex flex-col justify-center items-center gap-4 mt-18">
         <h1 class="text-4xl font-bold">CONTACTAME</h1>
         <div class="divider h-2 w-18 border-4 border-gray-800 bg-transparent mx-auto"></div>
-        <p class="text-gray-400 text-2xl">No dudes en contactarme completando el formulario a continuación y te responderé lo antes posible.</p>
+        <p class="text-gray-400 text-2xl">No dudes en contactarme completando el formulario a continuación y te
+            responderé lo antes posible.</p>
     </div>
     <div class=" w-full h-full flex justify-center items-center p-4">
-        <form class="bg-white p-8 flex flex-col w-[50%] rounded-lg shadow-lg gap-6 ">
+        <form #formFormulario
+            class="bg-white p-8 flex flex-col w-[50%] rounded-lg shadow-lg gap-6 ">
             <label class="text-gray-400 font-semibold text-lg" for="">Nombre</label>
-            <input class="input input-primary w-full text-gray-300" type="text" placeholder="Escribe tu Nombre">
+            <input class="input input-primary w-full text-gray-300" type="text" name="name"
+                placeholder="Escribe tu Nombre">
             <label class="text-gray-400 font-semibold text-lg" for="">Correo Electronico</label>
-            <input class="input input-primary  w-full text-gray-300"  type="text" placeholder="Escribe tu Correo Electronico">
+            <input class="input input-primary  w-full text-gray-300" name="email" type="text"
+                placeholder="Escribe tu Correo Electronico">
             <label class="text-gray-400 font-semibold text-lg" for="">Mensaje</label>
-            <textarea class="textarea textarea-primary w-full text-gray-300"  type="text" placeholder="Escribe tu Mensaje"></textarea>
+            <textarea class="textarea textarea-primary w-full text-gray-300" name="message" type="text"
+                placeholder="Escribe tu Mensaje"></textarea>
             <div class="flex justify-end">
-                <button class="btn btn-primary text-xl p-8">Enviar</button>
+                <button onclick="my_modal_1.showModal()" class="btn btn-primary text-xl p-8">Enviar</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">Estas Seguro de Querer Enviar Este Mensaje?</p>
+                        <div class="modal-action">
+                            <form method="dialog" #formAlerta>
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-primary">SI</button>
+                                <button class="btn btn-secondary">Cancelar</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
             </div>
         </form>
     </div>

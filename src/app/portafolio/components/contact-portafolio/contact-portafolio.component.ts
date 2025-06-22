@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, viewChildren } from '@angular/core';
+
+const textpost='action="https://formsubmit.co/franzgavino3@gmail.com" method="POST"';
 
 @Component({
   selector: 'contact-portafolio',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class ContactPortafolioComponent {
+
+  formFormulario=viewChildren('#formFormulario');
+  constructor(){
+    console.log(this.formFormulario());
+    
+  }
 
 }
