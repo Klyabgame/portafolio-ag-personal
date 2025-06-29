@@ -1,9 +1,8 @@
-import { Component, ElementRef, inject, signal, viewChild, viewChildren } from '@angular/core';
+import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms'
 import { FormUtils } from '../../../shared/utils/form.utils';
 import { HttpClient } from '@angular/common/http';
 
-const textpost='action="" method="POST"';
 
 @Component({
   selector: 'contact-portafolio',
@@ -34,12 +33,20 @@ export class ContactPortafolioComponent {
   }
   sendData(){
     this.sendBoolean.set(true);
-    console.log(this.sendBoolean());
+    
+
+
+    this.http.post('https://formsubmit.co/franzgavino3@gmail.com',this.formFormulario.value).subscribe((a)=>{
+      console.log(a);
+      
+    });
+    
   }
   sendFormulario(){
     this.formFormulario.markAllAsTouched();
     console.log('aea mongol');
     console.log(this.formFormulario.valid);
+    console.log(this.formFormulario.value);
     
   }
 
