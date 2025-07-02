@@ -1,16 +1,18 @@
-<div class="flex flex-col p-8 h-screen justify-center items-center  bg-gray-100">
+<div class="flex flex-col p-8 min-h-screen justify-center items-center  bg-gray-100">
     <div class="flex flex-col justify-center items-center gap-4 mt-20">
         <h1 class="text-4xl font-bold">SOBRE MI</h1>
         <div class="divider h-2 w-18 border-4 border-gray-800 bg-transparent mx-auto"></div>
 
 
-        <p class="text-2xl text-gray-400">Hola, Aqui encontraras mas sobre mi, las tecnologias que manejo en mi dia a dia como
+        <p class="text-2xl text-gray-400">Hola, Aqui encontraras mas sobre mi, las tecnologias que manejo en mi dia a
+            dia como
             programador</p>
     </div>
-    <div class="flex flex-row justify-center items-center gap-4   h-full ">
-        <div class="w-[40%] flex flex-col gap-2  p-4  ">
-            <h2 class="text-2xl font-bold">Conoceme un poco mejor!</h2>
-            <p class="w-[80%]   text-base/8 text-gray-400">Soy un Desarrollador Web enfocado en Frontend, especializado en la construcción y gestión de la interfaz
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4  h-full ">
+        <div class="w-full md:w-[40%] flex flex-col gap-2  p-4  ">
+            <h2 class="text-2xl font-bold text-center md:text-left">Conoceme un poco mejor!</h2>
+            <p class="w-full md:w-[80%]  text-base/8 text-gray-400 text-center md:text-left">Soy un Desarrollador Web
+                enfocado en Frontend, especializado en la construcción y gestión de la interfaz
                 de sitios web y aplicaciones web, asegurando que contribuyan al éxito del producto final. Mis
                 herramientas principales en el día a día incluyen Angular y Node.js, lo que me permite trabajar
                 eficientemente en el desarrollo de interfaces dinámicas y la gestión del backend cuando es necesario.
@@ -22,9 +24,11 @@
                 Estoy abierto a oportunidades laborales donde pueda aportar, aprender y seguir creciendo
                 profesionalmente. Si tienes una oferta que se alinee con mis habilidades y experiencia, no dudes en
                 contactarme.</p>
-            <button class="btn btn-secondary w-[20%] p-6">CONTACTAME</button>
+            <div class="flex justify-end md:justify-start">
+                <button class="btn btn-secondary w-[30%] md:w-[25%] p-6">CONTACTAME</button>
+            </div>
         </div>
-        <div class="w-[40%] flex flex-col gap-2   p-4 ">
+        <div class="w-full md:w-[40%] flex flex-col gap-2  p-4  md:h-screen">
             <h2 class="text-2xl font-bold">HABILIDADES</h2>
             <div class="flex flex-wrap gap-4 ">
                 @for (item of skill; track $index) {
