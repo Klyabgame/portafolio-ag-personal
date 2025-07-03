@@ -1,6 +1,6 @@
 <div>
-    <section class="flex justify-between p-4 items-center mx-">
-        <div class="flex items-center gap-4 cursor-pointer hover:text-blue-700">
+    <section class="flex flex-col md:flex-row justify-between p-4 items-center mx-">
+        <div class="w-full md:w-auto flex  items-center gap-4 cursor-pointer hover:text-blue-700 ">
 
             <div class="avatar">
                 <div class="ring-primary ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
@@ -13,7 +13,7 @@
 
         <ul class="menu menu-horizontal">
             @for (item of menuHeaderEs(); track $index) {
-                <li class="p-2 hover:text-blue-700 font-bold "><a [href]="'#'+item">{{item | uppercase  }} </a></li>
+                <li class="p-1 md:p-2 hover:text-blue-700 font-bold text-xs md:text-sm  "><a [href]="'#'+item">{{item | uppercase  }} </a></li>
             }
 
         </ul>
